@@ -10,3 +10,8 @@ body {
 .App {
   text-align: center;
 }
+
+.header {
+  font-size: xx-large;
+  font-weight: 700;
+}

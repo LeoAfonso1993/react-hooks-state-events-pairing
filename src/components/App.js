@@ -1,17 +1,26 @@
+import react, { useState } from "react";
 import video from "../data/video.js";
+import Header from "./Header.js";
+import Iframe from "./Iframe.js";
+import LikeDislike from "./LikeDislike.js";
 
 function App() {
-  console.log("Here's your data:", video);
+  const[countLikeButton, setLikeButton] = useState(0)
+  
+
+  function likeButton() {
+    return setLikeButton(countLikeButton + 1)
+  }
+
+
 
   return (
     <div className="App">
-      <iframe
-        width="919"
-        height="525"
-        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-        frameBorder="0"
-        allowFullScreen
-        title="Thinking in React"
+      <Header />
+      <Iframe />
+      <LikeDislike 
+      likeButton={likeButton}  
+      countLikeButton={countLikeButton}
       />
     </div>
   );
