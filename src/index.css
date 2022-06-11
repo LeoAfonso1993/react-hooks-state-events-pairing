@@ -15,3 +15,13 @@ body {
   font-size: xx-large;
   font-weight: 700;
 }
+
+.comments {
+  
+  margin-left: -40px;
+  margin-right: auto;
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  
+}

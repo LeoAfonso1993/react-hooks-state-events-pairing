@@ -4,6 +4,7 @@ function LikeDislike({ likeButton, dislikeButton, countDislikeButton, countLikeB
     return (
         <div>
             <button onClick={likeButton}>{countLikeButton}👍</button>
+            <button onClick={dislikeButton}>{countDislikeButton}👎</button>
             
         </div>
     )
